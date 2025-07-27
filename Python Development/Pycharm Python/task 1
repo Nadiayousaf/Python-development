@@ -1,0 +1,108 @@
+'''my-list=["1,2,3"]
+my-list.append(4)
+print(my-list)'''
+#syntax and comments
+if 5>2:
+    print("Five is greater than two!")
+    if 5>2:
+        print ("Five is greater than two!")
+ # variables       
+a=4
+A="sally"       
+print(A)
+#data types
+x = str("Hello World")
+print(x)
+x=float(20.5)
+print(x)
+x=list["apple","banana","charry"]
+print(x)
+x=dict{name:"john";age:6}
+print(x)
+x=set("apple","banana","charry")
+x=frozenset("apple","banana","charry")
+x=bool(5)
+print(x)
+#conversion
+
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c)
+#Random number
+'''import random
+print(random.Range(10,100))'''''
+b = "Hello, World!"
+print(b[-5:-2])
+b = "Hello, World!"
+print(b[2:])
+#The strip() method removes any whitespace from the beginning or the end:
+
+a = " Hello, World! "
+print(a.strip())
+#boolen 
+x = "Hello"
+y = 15
+
+print(bool(x))
+print(bool(y))'''
+#loops and break or continue statement
+'''fruits=["apple","banana","charry"]
+for x in fruits:
+    if x=="banana":
+       print(x)
+    continue
+fruits=["apple","banana","charry"]
+for x in fruits:
+    if x=="apple":
+       print(x)
+     break
+for _ in range(5):
+    print("sorry")
+   #while loop
+count = 0
+while count < 5:
+    print("sorry")
+    count += 1
+    #functions
+   # •	Function Arguments (Positional, Keyword, Default, Variable-length)
+def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
+def my_function(food):
+    for x in food:
+        print(x)
+fruits=["apple","Banana","charry"]
+my_function(fruits)
+   
+def birthday_wish(name):
+    message = f"Happy Birthday, {name}! 🎉🎂 Wishing you a day filled with love, joy, and wonderful memories!"
+    return message
+
+# Input the name of the birthday person
+birthday_person = input("Enter the name of the birthday person: ")
+wish = birthday_wish(birthday_person)
+print(wish)
+    
+   
+   
+   
+   
+

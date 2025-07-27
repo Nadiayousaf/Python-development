@@ -1,0 +1,453 @@
+'''year=2024
+def leap_year():
+    if year==leap_year:
+        return True
+    else:
+        return False
+print(leap_year())'''
+
+
+'''year=int(input("Enter the number:"))
+def leap_year():
+    if (year==leap_year):return True 
+    else: return False
+print(leap_year())
+
+
+a='4'
+b='5'
+print(int(a)/(int(b)))
+print(a/b)
+'''
+
+
+
+
+
+
+
+''' Enter Mcq1:
+user entered--> tell ur name
+system--> is input correct if corrent press enter else press 1
+user press 1 ---->
+Enter option again 
+user entered ----> Pak Pm name ?
+user continiued by pressing enter 
+Enter option and press enter
+imran
+khan
+sharif
+hafiz
+enter corrct option key
+user entered b or any thing that represents mcq option numbering
+
+<< Enter Mcq2:
+user entered--> tell ur name
+system--> is input correct if corrent press enter else press 1
+user press 1 ---->
+Enter option again 
+user entered ----> Pak Pm name ?
+user continiued by pressing enter 
+Enter option and press enter
+imran
+khan
+sharif
+hafiz
+enter corrct option key
+user entered b or any thing that represents mcq option numbering
+
+Print('Now we will quiz u')
+display each statement with its options and tell user to enter correct key or number 
+
+then at last count them'''''
+
+
+
+'''def MCQS(): 
+ Q1=input("Enter the MCQ:")
+correct_confirmation=input()
+user_input=input("Enter the correct option:")
+if user_input==correct_confirmation:
+    print("press enter")
+else:
+    print("press one")
+MCQS_name=input("Enter the options name")
+options=input('take four options,a,b,c,d')
+print(correct_confirmation)
+print(options)
+MCQS()'''
+
+
+'''MCQS=input("enter the option:a/b/c/d ") 
+MCQ2=input("Enter the String:")
+MCQS_name=input("Enter the options name {a:""},{b:""},{c:""},{d:""}")
+options=input('take three options {a:""},{b:""},{c:""},{d:""}')
+print(options )
+MCQS() '''
+
+
+'''def GenerateMCQS():
+    Question1=input("Enter the MCQ")
+    user_input=input('user_entered')
+    Confirmation=(input('is input correct if correct press enter else press one') )
+    MCQS_name=input("Enter the options name {a:""},{b:""},{c:""},{d:""}")
+print("Enter options and press enter")
+options=input('take three options')
+user_input=(input("Enter correct options key:"))
+print()
+print(options)
+GenerateMCQS()
+'''
+
+
+
+
+
+
+
+
+
+
+'''<< Enter Mcq2:
+user entered--> tell ur name
+system--> is input correct if corrent press enter else press 1
+user press 1 ---->
+Enter option again 
+user entered ----> Pak Pm name ?
+user continiued by pressing enter 
+Enter option and press enter
+imran
+khan
+sharif
+hafiz
+enter corrct option key
+user entered b or any thing that represents mcq option numbering
+
+
+
+Print('Now we will quiz u')
+display each statement with its options and tell user to enter correct key or number 
+
+
+then at last count them'''
+
+'''def MCQS(statement1,statement2,options):
+    print(statement1,statement2) 
+    user_input=input("enter the option:a/b/c ") 
+    return user_input
+statement1=input("enter the question1:")
+options=input('take three options {a:},{b:},{c:}')
+statement2=input("Enter the Question2:")
+options=input("choose one option{a:},{b:},{c}")
+print(MCQS(statement1,statement2,options))
+
+
+def MCQ():
+    MCQS=input("enter the option:a/b/c/d ") 
+MCQ1=input("Enter the String:")
+MCQS_name=input("Enter the options name {a:""},{b:""},{c:""},{d:""}")
+options=input('take three options {a:""},{b:""},{c:""},{d:""}')
+print(MCQS_name)
+MCQ()'''
+
+
+'''#Even-odd checker
+def is_even_or_odd():
+    while True:
+     user_input=(input("Enter the number:(or type 'exit'to quit)"))
+     if user_input.lower()=="exit":
+         print('Good bye')
+         break
+try:
+  number=int(input("Enter the number:(or type 'exit'to quit)"))
+  if number%2==0:
+        print('even')
+  else:
+      number!=2==0
+      print('odd')
+except  ValueError:   
+     print('invalid input')
+is_even_or_odd()'''
+     
+#Simple calculator
+
+    
+
+        
+    
+'''def count_vowels(s):
+    # Define a string of vowels
+    vowels = "aeiouAEIOU"
+    count = 0  # Initialize a counter
+
+    # Loop through each character in the string
+    for char in s:
+        # Check if the character is a vowel
+        if char in vowels:
+            count += 1  # Increment the counter if it's a vowel
+
+    return count
+
+# Example usage
+input_string = "Hello, how are you today?"
+vowel_count = count_vowels(input_string)
+print(f"The number of vowels in the string is: {vowel_count}")
+'''
+
+
+
+
+'''def count_consonents(s):
+  vowels="AEIOUaeiou"
+  count=0
+  for char in s:
+        if char .isalpha()and char not in vowels:
+            count+=1
+  return count
+input_string="Nadia yousaf"
+count_consonents=count_consonents(input_string)
+print(f"The number of consonents in the string is:'{count_consonents}")'''
+
+
+
+'''def string_methonds():
+    txt="pyTHOn is AweSome, isn't it ?Python is   FUN!"
+    print(txt.lower())
+    print(txt.strip())
+    txt="python"
+    print(txt.upper())
+def  count(s):
+    str='is'
+    txt="pyTHOn is AweSome, isn't it ?Python is   FUN!"
+    count=0
+    for char in s:
+        if char in txt():
+            count+=1
+            return count
+
+count_is=count(str)
+print(f"The number of 'is' in the string is:'{count_is}")
+string_methonds()
+count()'''
+
+
+
+'''def string_methods():
+ 
+ txt="pyTHOn is AweSome, isn't it ?Python is   FUN!"
+ print(txt.lower())
+ parts=" ".join(txt.split())
+ print(parts)
+ word='python'
+ result=txt.upper()
+ result=txt.replace(word,word.upper())
+ print(result)
+def count_specific_word():
+ count=0
+ specific_word='is'
+ txt="pyTHOn is AweSome, isn't it ?Python is   FUN!"
+ count=txt.count(specific_word)
+ print(f"The '{specific_word}'appears in {count}times")
+ final_string=txt.center(60,"*")
+ print(final_string)
+ return count
+count_specific_word()
+string_methods()'''
+
+'''
+def count_specific_word(specific_word):
+ count=0
+ txt="pyTHOn is AweSome, isn't it ?Python is   FUN!"
+ count=txt.count(specific_word)
+ print(f"The '{specific_word}'appears in {count}times")
+ return count
+count_specific_word('is')'''
+
+
+'''def count_vowels(str):
+     vowels="aeiouAeiou"
+     count=0
+     for char in str:
+        if char in vowels:
+            count += 1
+     return count
+str="Nadia yousaf"
+vowel_count=count_vowels(str )
+print(f"The number of vowels in the string is:{vowel_count}")'''
+
+
+'''def text_analyzer(vowels,consonents,digits,special_character):
+    user_input=(input("Enter the String:"))
+def count_vowels(user_input):
+    vowels="AEIOUaeiou"
+    count=0
+    for char in user_input:
+        if char in vowels:
+            count += 1
+    return count
+user_input=(input("Enter the String:"))
+vowel_count=count_vowels(user_input)
+print(f"The number of vowels in the string is:{vowel_count}")
+def count_consonents(user_input):
+    vowels="AEIOUaeiou"
+    count=0
+    for char in user_input:
+        if char .isalpha()and char not in vowels:
+            count+=1
+    return count
+user_input=(input("Enter the String:"))
+count_consonents=count_consonents(user_input)
+print(f"The number of consonents in the string is:'{count_consonents}")
+def is_digit():
+    s='123456'
+    if s.isdigit():
+       print("String is numeric")
+    else:
+       print("String is not numeric")
+def count_specific_word():
+     count=0
+specific_word='is'
+user_input=(input("Enter the String:"))
+count=user_input.count(specific_word)
+print(f"The '{specific_word}'appears in {count}times")
+count_specific_word()
+is_digit()
+count_vowels()
+text_analyzer()'''
+
+
+
+'''def text_analyzer():
+    messy_string= "   hello---WORLD__python  is---great_  "
+    cleaned_string=messy_string.replace("-"," ").replace("_"," ").strip().lower()
+    cleaned_string = cleaned_string.replace('python', 'PYTHON')
+    print(cleaned_string)
+    
+    final_string=(cleaned_string.capitalize())
+    final_string=(final_string.center(60,"*"))
+    print(final_string)
+    
+    position=messy_string.find("great")
+    print(f'The position of the String is {position}')
+def count_words(): 
+     count=0
+     target_word='is'
+     messy_string= "   hello---WORLD__python  is---great_  "
+     count=messy_string.count(target_word)
+     print(f'The word is appears {target_word} in {count} times.')
+     return count
+count_words()
+text_analyzer()'''
+
+
+
+
+'''TXN001,  100.50  , Purchase of books  
+TXN002, 50.75, Coffee machine  
+TXN003, invalid, Invalid amount  
+TXN004,75.25,Office supplies  
+
+Requirements:
+Use split to separate records and fields.
+Use strip to clean whitespace from fields.
+Use isdigit to check if the transaction ID is valid (must be alphanumeric after removing "TXN").
+Use isinstance to validate the amount is a number (int or float) after conversion.
+Convert amounts to float for calculation, handling invalid amounts gracefully.
+Track invalid records using a global variable.
+Calculate the total valid amount in a local scope.
+
+
+
+
+
+Result:
+Summary of Valid Transactions:
+TXN001: $100.50 - Purchase of books
+TXN002: $50.75 - Coffee machine
+TXN004: $75.25 - Office supplies
+Total Amount: $226.50
+Invalid Records Found: 1'''
+    
+    
+
+
+
+
+
+def ATM_Machine():
+    print("Welcome to Python Bank ATM")
+
+    def Account_creation():
+        user_name = input("Enter the full name: ")
+        user_password = input("Enter the password: ")
+
+        encrypt_password = ""
+        for char in user_password:
+            ascii_value = ord(char)
+            shifted_value = ascii_value + 5
+            encrypted_char = chr(shifted_value)
+            encrypt_password += encrypted_char
+
+        print(f'Encrypted password: "{encrypt_password}"')
+        account_number = input("Enter account number: ")
+
+        user_recovery_pin = input("Enter recovery pin: ")
+        if user_recovery_pin.isdigit():
+            print("User  recovery pin:", user_recovery_pin)
+        else:
+            print("Invalid recovery pin")
+
+        account_holder_name = input("Enter account holder name: ")
+        if account_holder_name and account_number:
+            last_two_digit = account_number[-2:]
+            login_id = account_holder_name + last_two_digit
+            print("Login ID:", login_id)
+        else:
+            print("Invalid account number")
+            return None
+
+        user_transferable_account_numbers = input("Enter transferable account number: ")
+        if user_transferable_account_numbers.isdigit():
+            print("Transferable account number:", user_transferable_account_numbers)
+        else:
+            print("Error: Please enter a valid account number")
+
+        return login_id, encrypt_password, user_recovery_pin  
+
+    def Account_login(login_id, encrypt_password, user_recovery_pin):
+        if login_id and encrypt_password:
+            print("Proceed to ATM menu")
+        else:
+            print("Invalid login")
+            print("1. Re-login")
+            print("2. Forget password")
+            choice = input("Enter choice number (1 or 2): ")
+            if choice == '1':
+                print("Re-login")
+                Account_login(login_id, encrypt_password, user_recovery_pin)
+            elif choice == '2':
+                recovery_pin = input("Enter recovery pin: ")
+                account_number = input("Enter account number: ")
+                if recovery_pin == user_recovery_pin:
+                    print(f'Encrypted password: {encrypt_password}')
+                else:
+                    print("Invalid recovery pin")
+
+    login_id, encrypt_password, user_recovery_pin=Account_creation()
+
+    if login_id and encrypt_password:
+     Account_login(login_id, encrypt_password, user_recovery_pin)
+     
+
+ATM_Machine()
+
+
+
+    converted = map(lambda x: safe_int(x), data)
+    filtered = [x for x in converted if x > 0]
+    if not filter:
+        return "No valid input"
+
+    total = reduce(lambda x, y: x + y, filtered)
+    average = total(filtered) / len(filtered)
+    print(average)
