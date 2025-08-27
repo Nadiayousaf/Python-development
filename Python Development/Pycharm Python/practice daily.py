@@ -131,5 +131,187 @@ def mixed_data_processor(data):
 data=["10","two","30","fifty"]
 mixed_data_processor(data)
 
-#Q 12
-#  custom filter
+# Word_length_filtered
+def word_length_filtered(data):
+    try:
+        filter_list=filter(lambda w:len(w)>=5,data)
+        capital_letter=map(lambda w:w.upper(),filter_list)
+        return list(capital_letter)
+    except Exception as e:
+        print(e)
+print(word_length_filtered(["hello","World!","PY","Exception","None"]))
+
+#Classify NuMBERS
+def classify_numbers(nums):
+    result=[]
+    for x in nums:
+      try:
+          if  not isinstance(x,int):
+             raise ValueError (f"{x} is not an integer")
+          tag="even" if x%2==0 else "odd"
+          result.append(f"{tag}:{x}")
+      except Exception as e:
+         print("Warning",e)
+    return result
+
+output=classify_numbers([10, "a", 7, 0, 3.14])
+print(f"result:",output)
+
+# Student_Grade_Calculator:
+def Student_Grade_calculator():
+    grade_dict={
+        "Alice": [95, 82, 100],
+        "Bob": [70, "eighty"],
+        "Charlie": []
+    }
+
+
+    def assign_grades(average):
+     if average>=90:
+         return "A"
+     elif average>=80:
+         return"B"
+     elif average>=70:
+         return "C"
+     elif average>=60:
+         return "D"
+     else:
+         return "F"
+
+    def grade_students(grade_dict):
+         for name, marks in grade_dict.items():
+             try:
+                 if not marks:
+                     raise ValueError("no marks")
+
+                 average = sum(marks) / len(marks)
+                 grade=assign_grades(average)
+                 print([f" 'name': {name} , 'average': {average},'grade': {grade}"])
+             except Exception as e:
+                 print(f"Error Processing :{name} and {e}")
+    grade_students(grade_dict)
+Student_Grade_calculator()
+
+#reverse non palindrome
+def reverse_non_palindrome(string):
+    def reverse(s):
+        if not isinstance(s,str):
+            raise TypeError("s is not a string")
+        return s[::-1]
+    reverse_string=[]
+    for item in string:
+
+        try:
+          if  reverse(item).lower() != item.lower():
+             reverse_item=reverse(item)
+             reverse_string.append(reverse_item)
+        except Exception as e:
+         print(e)
+
+    return reverse_string
+result=reverse_non_palindrome(["madam", "hello", 123, "Racecar", "python"])
+print(result)
+
+#--------------------------------------------Validation Questions----------------------------
+#----------------------------------------------------------
+#Positive integer validator
+def positive_integer_validator():
+    while True:
+        num=int(input("Enter number:"))
+        try:
+            if num >0 :
+                print(f"Valid input:{num}")
+                break
+            else:
+                print("number is positive")
+        except Exception as e:
+            print(e)
+            print("Invalid number.Enter number again.")
+positive_integer_validator()
+
+#Age Range checker
+
+def Age_Range_Checker():
+    age=int(input("Enter Your age: "))
+    while True:
+     try:
+            if 1 <= age <=120:
+                print(f"Age Accepted: {age}")
+                break
+            else:
+                print("Age must be between 1 and 120.")
+                break
+     except Exception as e:
+            print(e)
+            print("invalid input. please Enter a number.")
+
+Age_Range_Checker()
+
+# Password Validator
+def password_validator():
+    password=input("Enter password:")
+    while True:
+        try:
+            if len(password)<8:
+                print("Password must be at least 8 characters.")
+            elif " " in password:
+                print("Password can not have spaces.")
+            else:
+                print ("correct password.")
+            break
+        except Exception as e:
+            print(e)
+            print("invalid password.")
+password_validator()
+
+
+#
+def CustomException():
+    pass
+def validate_age():
+    age=int(input("Enter the age:"))
+    try:
+        if age>=0:
+            print(f"Age is {age}")
+            raise CustomException("invalid age.")
+        else:
+            print('Invalid age')
+    except Exception as e:
+        print(e)
+    except CustomException as e:
+        print(e)
+
+validate_age()
+# Validation of Password:
+def password_validation():
+    password=input("Enter password:")
+    try:
+        if len(password)>8:
+            print("password is too long.")
+        else:
+            print("password is valid. ")
+    except Exception as e:
+        print(e)
+password_validation()
+
+
+
+def password_validation(password):
+    special_char="!@#$%^&*."
+    if len(password)>8:
+        raise Exception("password is too long.")
+    if not any(char.isdigit()for char in password):
+            raise Exception("Password contain at least one digit.")
+    if not any(char.isupper()for char in password):
+            raise Exception("Password contain at least one uppercase.")
+    if  not any(char in special_char for char in password):
+            raise Exception("password contain at least special character.")
+    print("password is valid.")
+def validate_password():
+    password = input("Enter password:")
+    try:
+        password_validation(password)
+    except Exception as e:
+        print(e)
+        print("Invalid password.")
+validate_password()

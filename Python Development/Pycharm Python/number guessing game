@@ -1,7 +1,3 @@
-import random
-def Guessing_number():
-  number_to_guess=random.radient(1,100)
-  print("Wellcome to number guessing game")
-  attempts=0
+
   
     

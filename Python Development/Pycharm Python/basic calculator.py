@@ -50,7 +50,7 @@ def calculator():
     else:
                 print("maths error")
           
-if_name_=="_main_":
+
 calculator()
 
 

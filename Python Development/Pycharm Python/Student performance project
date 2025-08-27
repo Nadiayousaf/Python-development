@@ -1,0 +1,40 @@
+def assign_grades(average):
+     if average>=90:
+         return "A"
+     elif average>80:
+         return "B"
+     elif average>70:
+         return "C"
+     elif average>60:
+         return "D"
+     else:
+         return "F"
+def calculate_marks(marks):
+     total_marks=sum(marks)
+     average=total_marks/len(marks)
+     grade=assign_grades(average)
+     return grade, average, total_marks
+
+def highest_and_lowest_grade(data):
+    highest_grade = max(data, key=lambda x: x['average'])
+    lowest_grade = min(data, key=lambda x: x['average'])
+    print(f"highest grade: {highest_grade['name']}  --- {highest_grade['average']} %.")
+    print(f"lowest grade:  {lowest_grade['name']}  --- {lowest_grade['average']}  %.")
+    print()
+def Student_performance_Analyzer():
+ data = [
+        {"name": "Ali", "marks": [85, 78, 92]},
+        {"name": "Ahmad", "marks": [89, 80, 92]},
+        {"name": "Nadia", "marks": [90, 78, 100]},
+    ]
+ print("----Student performance Summary----")
+ print()
+ for student in data:
+     grade, average, total_marks = calculate_marks(student['marks'])
+     student['grade']=grade
+     student['average']=average
+     student['total_marks']=total_marks
+
+     print(f"student name:{student['name']:5} | Total: {student['total_marks']:3} | average: {student['average']} | grade: {student['grade']}")
+ highest_and_lowest_grade(data)
+Student_performance_Analyzer()

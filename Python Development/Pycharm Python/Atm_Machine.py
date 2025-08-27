@@ -42,11 +42,5 @@ def Atm_Machine():
         last_two_digits=acc_holder_name[-2:]
         login_id=acc_holder_name + last_two_digits
         print("login id:",login_id)
-
         
-
-
-
-
-
 Atm_Machine()
